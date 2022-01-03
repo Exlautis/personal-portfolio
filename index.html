@@ -1,22 +1,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Assets/Css/stylesheet.css">
     <title>Xavyr's Web portfolio</title>
 </head>
+
 <body>
+
     <!--Header start-->
-    <header class="header">
+    <header>
         <h1>Xavyr Rodriguez</h1>
-        <div>
+        <nav>
             <ul>
                 <li>
-                    <a href="#About-me">About me</a>
+                    <a href="#about-me">About me</a>
                 </li>
                 <li>
-                    <a href="#work">What I've Created</a>
+                    <a href="#portfolio">What I've Created</a>
                 </li>
                 <li>
                     <a href="#contact-me">Contact me</a>
@@ -25,33 +26,18 @@
                     <a href="#my-resume">Resume</a>
                 </li>
             </ul>
-        </div>
+        </nav>
     </header> 
     <!--Header end-->
 
-    <!--hero start-->
-    <div class="hero"> <img src="./Assets/images/austin-skyline.jpeg" alt="coding cat img"></div>
-    <!--hero end-->
-
-    <section class="content">
-        <div>
-            <h2>About Me</h2>
-        </div>
-        <div>
-            <h2>Work</h2>
-        </div>
-        <div>
-            <h2>Contact Me</h2>
-        </div>
-
-    </section>
-
     <!--Start Bio Section-->
-    <section class="my-bio">
-        <div id="about-me" class="about-me">
-            <h2>About Me</h2>
+    <section id="about-me" class="portfolio-section">
+        <div  class="section-title">
+            <h2>
+                About <br /> Me
+            </h2>
         </div>
-        <div class="bio">
+        <div id="about-me-text" class="section-content">
             <p>
                 ADD BIO LATER :)
             </p>
@@ -59,54 +45,108 @@
     </section>
     <!--End Bio Section-->
 
-    <!--Start Work Section-->
-    <section class="creations">
-        <div id="work">
-            <h2>Work</h2>
+    <!--Start portfolio Section-->
+    <section id="portfolio" class="portfolio-section">
+        <div class="section-title">
+            <h2>Portfolio</h2>
         </div>
-        <section>
-            <div class="p1">
-                <h3>run buddy</h3>
-            </div>
-            <div class="p2">
-                <h3>future projects</h3>
-            </div>
-            <div class="p3">
-                <h3>future projects</h3>
-            </div>
-            <div class="p4">
-                <h3>future projects</h3>
-            </div>
-            <div>
-                <h3>future projects</h3>
+        <section class="section-content">
+            <div class="portfolio-cards">
+                <a href="">
+                    <div id="card-1" class="port-card">
+                        <div class="card-text">
+                            <h3>
+                                Run Buddy Site
+                            </h3>
+                            <p>
+                                HTML/CSS
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div id="card-2" class="port-card">
+                        <div class="card-text">
+                            <h3>
+                                Robot Gladiators
+                            </h3>
+                            <p>
+                                Javascript
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div id="card-3" class="port-card">
+                        <div class="card-text">
+                            <h3>
+                                Horiseon
+                            </h3>
+                            <p>
+                                HTML/CSS
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <br/>
+                <a href="">
+                    <div id="card-4" class="port-card">
+                        <div class="card-text">
+                            <h3>
+
+                            </h3>
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                    <a href="">
+                        <div id="card-5" class="port-card">
+                            <div class="card-text">
+                                <h3>
+
+                                </h3>
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </a>
             </div>
         </section>
     </section>
     <!--End Work Section-->
 
     <!--Start contact Me Section-->
-    <section class="Contact">
-        <div id="contact-me">
+    <section id="contact-me" class="Contact">
+        <div class="section-title">
             <h2>Contact Me</h2>
         </div>
-        <ul>
-            <li>
-                <h4>432-924-6668</h4>
-            </li>
-            <li>
-                <h3>Email: <a href="xavyr2423@gmail.com">xavyr2423@gmail.com</a></h3>
-            </li>
-            <li>
-                <a href="#">Resume</a>
-            </li>
-        </ul>
+        <div class="section-content">
+            <ul>
+                <li>
+                    <h4>432-924-6668</h4>
+                </li>
+                <li>
+                    <h3>Email: <a href="xavyr2423@gmail.com">xavyr2423@gmail.com</a></h3>
+                </li>
+                <li>
+                    <a href="#">Resume</a>
+                </li>
+            </ul>
+        </div>
     </section>
     <!--End Contact me section-->
 
     <!--Start Resume Section-->
-    <section id="my-resume" class="footer">
-
-    </section>
     <!--End Resume section-->
+
+    <!--footer-->
+    <footer>
+        <h2>
+            Made by Xavyr
+        </h2>
+    </footer>
 </body>
 </html>

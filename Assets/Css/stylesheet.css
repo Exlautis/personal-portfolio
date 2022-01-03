@@ -1,116 +1,298 @@
 * {
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
 }
+:root{
+    --primary-color: rgb(132, 136, 132);
+    --secondary-color: rgb(6, 84, 110);
+    --tertiary-color: blue;
+}
+
 
 body{
-    background-color: darkgray;
+    background-color:var(--primary-color);
 }
 
 /* header start*/
-.header {
+header{
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #432a7c;
-    color: #ffffff;
+    background-color: var(--secondary-color);
+    position: -webkit-sticky;
+    position: sticky;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 9999;
 }
 
-.header h1 {
-    display: inline-block;
+header h1 {
     font-size: 48px;
+    margin: 5px;
 }
 
-.header div {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-}
-
-.header div ul {
-    list-style-type: none;
-}
-
-.header div ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
-
-a {
-    color: #ffffff;
+header a {
+    background-color: var(--secondary-color);
+    color: black;
     text-decoration: none;
 }
-/* End header section*/
 
-/* hero css start*/
-.hero img {
-    height: 250px;
-    width: 100%;
-    margin-bottom: 1px;
-    background-size: cover;
-    background-position: center;
+header nav {
+    padding-top: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    background-color: var(--secondary-color);
 }
 
-.content {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: left;
-    width: 20%;
-    height: 225%;
-    background-color: blueviolet;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+header a {
+    text-decoration: none;
+}
+
+/* End header section*/
+
+/* portfolio styling start*/
+
+.portfolio-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    width: 100vw;
+}
+
+.section-title {
+    position: relative;
+    text-align: right;
+    border-color: var(--tertiary-color);
+    font-size: 30px;
+    color: black;
+    width: 250px;
+    padding: 25px;
+    border-right: 5px solid;
+}
+
+.section-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+    text-decoration: none;
+    max-width: 74vw;
 }
 
 /* Start Bio section*/
-.my-bio {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-    
 
+div #about-me-text {
+    max-width: 5vw;
+    padding: 25px;
+}
+
+.section-content p {
+    font-size: 18px;
+    width: 40vw;
+}
 
 /* End bio section */
 
-/* Start work section */
+/* Start portfolio cards stylin */
 
-.creations {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+div .port-card {
+    margin: 6px;
+    border: 10px solid;
+    border-color: var(--secondary-color);
+    position: relative;
+    display: flex;
+    overflow: hidden;
 }
+
+.card-text {
+    background-color: var(--secondary-color);
+    width: 15rem;
+    height: 4rem;
+    bottom: 25px;
+    left: 0;
+    position: absolute;
+}
+
+.card-text p, .card-text h3 {
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.portfolio-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div #card-1 {
+    background-image: url();
+    width: 65vw;
+    height: 250px;
+    border: 10px solid;
+    border-color: var(--secondary-color);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 50%;
+}
+
+div #card-2, div #card-4 {
+    min-width: 32vw;
+    height: 250px;
+    border: 10px solid;
+    border-color: var(--secondary-color);
+    float: left;
+    margin: 3px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 50%;
+}
+
+div #card-3, div #card-5 {
+    min-width: 32vw;
+    height: 250px;
+    border: 10px solid;
+    border-color: var(--secondary-color);
+    float: right;
+    margin: 3px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 50%;
+}
+
+div #card-2 {
+    background-image: url();
+    background-position: center;
+}
+
+div #card-3 {
+    background-image: url();
+    background-position: center;
+}
+
+div #card-4 {
+    background-image: url();
+    background-position: center;
+}
+
+div #card-5 {
+    background-image: url();
+    background-position: center;
+}
+
+#card-1:hover, #card-2:hover, #card-3:hover, #card-4:hover, #card-5:hover{
+    opacity: 100%;
+}
+
+
 /* End work section*/
 
 /* start conact me section */
-.contact {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+.section-content ul {
+    list-style-type: none;
+    margin-left: 25px;
+    font-size: 50px;
+}
+
+.section-content li {
+    display: inline-block;
+    padding: 10px 50px;
+    text-decoration: none;
 }
 /* end contact me section */
 
 /* start resume section */
-.resume {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
 /* end resume section */
 
+/* media query start,*/
+
+@media  screen and (max-width: 1080px) {
+
+    header {
+        padding-bottom: 15px;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
+
+    .portfolio-section{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .section-title {
+        position: relative;
+        text-align: center;
+        border-right: 0;
+        border-bottom: 5px solid;
+        width: 25%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+
+    #about-me-text p {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+
+    div .port-card {
+        width: 65vw;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .section-content {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section-content ul {
+        display: flex;
+        flex-direction: column;
+        font-size: 40px;
+        text-align: center;
+        margin: auto;
+    }
+
+    
+}
+
 /* start footer */
+
+footer{
+    padding: 30px;
+    clear: both;
+    text-align: center;
+    background-color: var(--secondary-color);
+}
+
 /* end footer */
