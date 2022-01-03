@@ -5,9 +5,9 @@
     margin: 0;
 }
 :root{
-    --primary-color: rgb(132, 136, 132);
-    --secondary-color: rgb(6, 84, 110);
-    --tertiary-color: blue;
+    --primary-color:rgb(245, 248, 247); 
+    --secondary-color: rgb(19, 141, 117);
+    --tertiary-color: rgb(120, 36, 255);
 }
 
 
@@ -131,7 +131,7 @@ div .port-card {
 }
 
 div #card-1 {
-    background-image: url();
+    background-image: url(../images/hero-bg.jpeg);
     width: 65vw;
     height: 250px;
     border: 10px solid;
@@ -166,7 +166,7 @@ div #card-3, div #card-5 {
 }
 
 div #card-2 {
-    background-image: url();
+    background-image: url(../images/battle-robots.png);
     background-position: center;
 }
 
