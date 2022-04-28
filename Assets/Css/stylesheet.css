@@ -171,17 +171,17 @@ div #card-2 {
 }
 
 div #card-3 {
-    background-image: url();
+    background-image: url(../images/digital-marketing-meeting.jpg);
     background-position: center;
 }
 
 div #card-4 {
-    background-image: url();
+    background-image: url(../images/Weather-dashboard-ss.jpg);
     background-position: center;
 }
 
 div #card-5 {
-    background-image: url();
+    background-image: url(../images/Code-Quiz-SS.jpg);
     background-position: center;
 }
 
@@ -196,7 +196,7 @@ div #card-5 {
 .section-content ul {
     list-style-type: none;
     margin-left: 25px;
-    font-size: 50px;
+    font-size: 20px;
 }
 
 .section-content li {
